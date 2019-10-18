@@ -22,11 +22,11 @@ public struct Constants {
     
     static let kPerPage                     = 10
     static let kAvailableDict               = ["Yes", "No"]
-    static let kGoogleAPIKey                = "AIzaSyDhUxXQBB2dcIpn5yWz-2pukgKxG-N21L8"
+    static let kGoogleAPIKey                = ""
     static let kAPIVersion                  = "1.0"
-    static let kAuthAPIKey                  = "GPMDc9Z3bq65QtnAEDRs"
+    static let kAuthAPIKey                  = ""
     static let kDeviceType                  = "i"
-    static let kStripePublisherKey          = "pk_test_UmfKJ3we5uxjTeev5RadAh2p"
+    static let kStripePublisherKey          = ""
     
     static let kHeaders = ["X-API-KEY": kAuthAPIKey,
                           "Device-Type": kDeviceType,
