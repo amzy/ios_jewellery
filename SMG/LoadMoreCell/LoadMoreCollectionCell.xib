@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoadMoreCollectionCell" id="gTV-IL-0wX" customClass="LoadMoreCollectionCell" customModule="Kassimbaba_Rider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vie-bm-F63">
+                        <rect key="frame" x="144" y="6" width="32" height="32"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nmg-se-jKq">
+                                <rect key="frame" x="6" y="6" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.90460668099999997" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nmg-se-jKq" firstAttribute="centerX" secondItem="Vie-bm-F63" secondAttribute="centerX" id="9th-Hh-E44"/>
+                            <constraint firstAttribute="height" constant="32" id="C7r-WE-JKw"/>
+                            <constraint firstItem="nmg-se-jKq" firstAttribute="centerY" secondItem="Vie-bm-F63" secondAttribute="centerY" id="Vbt-jN-CmP"/>
+                            <constraint firstAttribute="width" constant="32" id="ad2-ta-mrf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Vie-bm-F63" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="1mi-xf-aMt"/>
+                <constraint firstItem="Vie-bm-F63" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="BqN-oe-usM"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="nmg-se-jKq" id="fV1-Ag-zxc"/>
+                <outlet property="bgView" destination="Vie-bm-F63" id="ty4-FQ-e7l"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

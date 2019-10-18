@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="a0T-SO-dsh" userLabel="Error View" customClass="ErrorView" customModule="SMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCv-UA-Saw">
+                    <rect key="frame" x="153" y="301.5" width="69" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <size key="shadowOffset" width="1" height="-1"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfQ-YW-QRe">
+                    <rect key="frame" x="146" y="335.5" width="83.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HfQ-YW-QRe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a0T-SO-dsh" secondAttribute="leading" constant="20" id="UL4-bG-xFr"/>
+                <constraint firstItem="aCv-UA-Saw" firstAttribute="centerX" secondItem="a0T-SO-dsh" secondAttribute="centerX" id="ccW-nV-tr3"/>
+                <constraint firstItem="HfQ-YW-QRe" firstAttribute="centerX" secondItem="a0T-SO-dsh" secondAttribute="centerX" id="hf7-we-fXq"/>
+                <constraint firstItem="aCv-UA-Saw" firstAttribute="bottom" secondItem="a0T-SO-dsh" secondAttribute="centerY" constant="-2" id="u8O-1B-AY8"/>
+                <constraint firstItem="HfQ-YW-QRe" firstAttribute="top" secondItem="a0T-SO-dsh" secondAttribute="centerY" constant="2" id="xWa-f6-Fcz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="L7T-R8-XET"/>
+            <connections>
+                <outlet property="errorLabel" destination="HfQ-YW-QRe" id="fs1-eU-EBu"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YKF-sv-Ovc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fake SplashVC-->
+        <scene sceneID="CVT-O3-dZD">
+            <objects>
+                <viewController storyboardIdentifier="FakeSplashVC" id="YKF-sv-Ovc" customClass="FakeSplashVC" customModule="SMG" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bwS-2N-n4A"/>
+                        <viewControllerLayoutGuide type="bottom" id="I8m-Rb-1wq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4jg-jJ-cKR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="splash_bg" translatesAutoresizingMaskIntoConstraints="NO" id="79g-Cb-enk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qSH-Ts-Iyo">
+                                <rect key="frame" x="16" y="110" width="343" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="KVn-F4-iAG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="bottom_bengles" translatesAutoresizingMaskIntoConstraints="NO" id="dXO-aX-6BF">
+                                <rect key="frame" x="16" y="422" width="343" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="H6g-mN-1qW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="79g-Cb-enk" secondAttribute="bottom" id="69I-Ju-V8L"/>
+                            <constraint firstItem="79g-Cb-enk" firstAttribute="top" secondItem="4jg-jJ-cKR" secondAttribute="top" id="C0b-uB-MHy"/>
+                            <constraint firstItem="dXO-aX-6BF" firstAttribute="leading" secondItem="Sgh-Pp-Zi5" secondAttribute="leading" constant="16" id="Lfa-bW-4Xf"/>
+                            <constraint firstItem="Sgh-Pp-Zi5" firstAttribute="trailing" secondItem="qSH-Ts-Iyo" secondAttribute="trailing" constant="16" id="QIy-fB-oPe"/>
+                            <constraint firstItem="I8m-Rb-1wq" firstAttribute="top" secondItem="dXO-aX-6BF" secondAttribute="bottom" constant="60" id="UGD-nG-fAB"/>
+                            <constraint firstItem="qSH-Ts-Iyo" firstAttribute="leading" secondItem="Sgh-Pp-Zi5" secondAttribute="leading" constant="16" id="gYV-1E-o1D"/>
+                            <constraint firstItem="qSH-Ts-Iyo" firstAttribute="top" secondItem="bwS-2N-n4A" secondAttribute="bottom" constant="90" id="hqT-bf-Irb"/>
+                            <constraint firstItem="79g-Cb-enk" firstAttribute="leading" secondItem="4jg-jJ-cKR" secondAttribute="leading" id="ov7-ZW-JXz"/>
+                            <constraint firstItem="Sgh-Pp-Zi5" firstAttribute="trailing" secondItem="dXO-aX-6BF" secondAttribute="trailing" constant="16" id="via-AL-Vwl"/>
+                            <constraint firstAttribute="trailing" secondItem="79g-Cb-enk" secondAttribute="trailing" id="xXL-0k-EOg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sgh-Pp-Zi5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0X-ai-6KX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottom_bengles" width="548" height="312"/>
+        <image name="splash_bg" width="720" height="1280"/>
+        <image name="splash_logo" width="562" height="205"/>
+    </resources>
+</document>

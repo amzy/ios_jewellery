@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Abbreviation" representedClassName="Abbreviation" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="testID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="abbreviations" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="About" representedClassName="About" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="memoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="slug" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AltName" representedClassName="AltName" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="testID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="alternateNames" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="BroadcastMesssage" representedClassName="BroadcastMesssage" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLoaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isRead" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CronData" representedClassName="CronData" syncable="YES">
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Discipline" representedClassName="Discipline" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="disciplines" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="FAQ" representedClassName="FAQ" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FeedbackCategory" representedClassName="FeedbackCategory" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Memo" representedClassName="Memo" syncable="YES">
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isPDF" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pdfPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="OrderEpic" representedClassName="OrderEpic" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="orderEpics" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="QuickGuide" representedClassName="QuickGuide" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="slug" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RelatedTest" representedClassName="RelatedTest" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="relatedTests" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="Specimen" representedClassName="Specimen" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="specimens" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="SpecimenType" representedClassName="SpecimenType" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="testID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="specimenTypes" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="tags" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="Test" representedClassName="Test" syncable="YES">
+        <attribute name="categoris" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clinicalUsages" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dayPerformed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="externalID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instructions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="internalID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCommonlyUsed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isDoneDaily" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isInternal" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="method" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priceCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="refRange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tatRoutine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tatStat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="whatsInclude" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="abbreviations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Abbreviation" inverseName="tests" inverseEntity="Abbreviation" syncable="YES"/>
+        <relationship name="alternateNames" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AltName" inverseName="tests" inverseEntity="AltName" syncable="YES"/>
+        <relationship name="disciplines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Discipline" inverseName="tests" inverseEntity="Discipline" syncable="YES"/>
+        <relationship name="orderEpics" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OrderEpic" inverseName="tests" inverseEntity="OrderEpic" syncable="YES"/>
+        <relationship name="relatedTests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RelatedTest" inverseName="tests" inverseEntity="RelatedTest" syncable="YES"/>
+        <relationship name="specimens" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Specimen" inverseName="tests" inverseEntity="Specimen" syncable="YES"/>
+        <relationship name="specimenTypes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpecimenType" inverseName="tests" inverseEntity="SpecimenType" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="tests" inverseEntity="Tag" syncable="YES"/>
+        <relationship name="tubes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tube" inverseName="tests" inverseEntity="Tube" syncable="YES"/>
+    </entity>
+    <entity name="TestCategory" representedClassName="TestCategory" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Tube" representedClassName="Tube" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tubeCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TubeMedia" inverseName="tube" inverseEntity="TubeMedia" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Test" inverseName="tubes" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <entity name="TubeMedia" representedClassName="TubeMedia" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tube" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tube" inverseName="media" inverseEntity="Tube" syncable="YES"/>
+    </entity>
+    <entity name="UserCategory" representedClassName="UserCategory" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserTest" inverseName="categories" inverseEntity="UserTest" syncable="YES"/>
+    </entity>
+    <entity name="UserTest" representedClassName="UserTest" syncable="YES">
+        <attribute name="testID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserCategory" inverseName="tests" inverseEntity="UserCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Abbreviation" positionX="-126" positionY="207" width="128" height="105"/>
+        <element name="About" positionX="-72" positionY="150" width="128" height="120"/>
+        <element name="AltName" positionX="-135" positionY="198" width="128" height="105"/>
+        <element name="BroadcastMesssage" positionX="-171" positionY="162" width="128" height="135"/>
+        <element name="Contact" positionX="115" positionY="153" width="128" height="120"/>
+        <element name="CronData" positionX="-162" positionY="171" width="128" height="60"/>
+        <element name="Discipline" positionX="-171" positionY="162" width="128" height="90"/>
+        <element name="FAQ" positionX="-27" positionY="333" width="128" height="90"/>
+        <element name="FeedbackCategory" positionX="97" positionY="36" width="128" height="90"/>
+        <element name="OrderEpic" positionX="-144" positionY="189" width="128" height="90"/>
+        <element name="QuickGuide" positionX="-63" positionY="18" width="128" height="105"/>
+        <element name="RelatedTest" positionX="-171" positionY="162" width="128" height="90"/>
+        <element name="Specimen" positionX="-162" positionY="171" width="128" height="90"/>
+        <element name="SpecimenType" positionX="-117" positionY="216" width="128" height="105"/>
+        <element name="Tag" positionX="-153" positionY="180" width="128" height="90"/>
+        <element name="Test" positionX="-227" positionY="9" width="128" height="480"/>
+        <element name="TestCategory" positionX="-380" positionY="9" width="128" height="135"/>
+        <element name="Tube" positionX="-171" positionY="162" width="128" height="133"/>
+        <element name="TubeMedia" positionX="-162" positionY="171" width="128" height="75"/>
+        <element name="UserCategory" positionX="-171" positionY="162" width="128" height="103"/>
+        <element name="UserTest" positionX="-153" positionY="180" width="128" height="75"/>
+        <element name="Memo" positionX="-171" positionY="162" width="128" height="120"/>
+    </elements>
+</model>

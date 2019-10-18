@@ -1,0 +1,36 @@
+
+"app_name"      = "TaxiApp";
+"txt_dismiss"   = "Dismiss";
+"txt_arabic"    = "عربى";
+
+"txt_english"               = "الإنجليزية";
+"txt_open_gps"              = "Open GPS";
+"txt_name"                  = "الاسم :";
+"txt_mobile"                = "المحمو :";
+"txt_save_current_location" = "Save Current Location";
+"txt_already_open"          = "GPS Already Enable";
+"title_activity_maps"       = "Map";
+"txt_search"                = "Search";
+
+"txt_dummy"                 = "Anjani joshi 0987456123";
+"error_name"                = "Name cannot be blank.";
+"error_name_validation"     = "Name must be 3 characters or longer.";
+"error_mobile"              = "Mobile number cannot be blank ";
+"txt_check_internet_conn"   = "No Internet Connection";
+
+"txt_name"          = "Name";
+"txt_email"         = "Email";
+"txt_dob"           = "DOB";
+"txt_gender"        = "Gender";
+"txt_phone"         = "Phone";
+"txt_city"          = "City";
+"txt_state"         = "State";
+"txt_country"       = "Country";
+"txt_proffesion"    = "Profession";
+"txt_website"       = "Website";
+"txt_interests"     = "Interests";
+"txt_and"           = "&";
+"txt_activity"      = "Activities";
+"txt_edit"          = "EDIT";
+"txt_profile"       = "PROFILE";
+"txt_update"        = "UPDATE";

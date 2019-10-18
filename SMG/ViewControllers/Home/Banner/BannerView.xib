@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerView" id="U6b-Vx-4bR" customClass="BannerView" customModule="SMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="u72-Fn-oHo">
+                    <rect key="frame" x="8" y="0.0" width="304" height="196"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="iVI-H2-Agu">
+                        <size key="itemSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DRT-Md-Epc">
+                    <rect key="frame" x="8" y="188" width="304" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" red="0.1960784314" green="0.70980392160000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="u72-Fn-oHo" secondAttribute="trailing" constant="8" id="Bdp-YT-jQe"/>
+                <constraint firstItem="u72-Fn-oHo" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="BmY-h5-s3R"/>
+                <constraint firstAttribute="trailing" secondItem="DRT-Md-Epc" secondAttribute="trailing" constant="8" id="Pgy-J4-FCI"/>
+                <constraint firstItem="DRT-Md-Epc" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="cXe-aG-ax7"/>
+                <constraint firstItem="DRT-Md-Epc" firstAttribute="bottom" secondItem="u72-Fn-oHo" secondAttribute="bottom" constant="29" id="mIy-7e-5Kz"/>
+                <constraint firstAttribute="bottom" secondItem="DRT-Md-Epc" secondAttribute="bottom" constant="-9" id="w8S-mX-YmH"/>
+                <constraint firstItem="u72-Fn-oHo" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="ydw-XE-oNx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="22s-D8-UMX"/>
+            <connections>
+                <outlet property="collectionView" destination="u72-Fn-oHo" id="ZJA-gE-xvy"/>
+                <outlet property="flowLayout" destination="iVI-H2-Agu" id="xmY-wZ-9n8"/>
+                <outlet property="pageControl" destination="DRT-Md-Epc" id="Sd4-lg-48T"/>
+            </connections>
+            <point key="canvasLocation" x="-127" y="-12"/>
+        </collectionReusableView>
+    </objects>
+</document>
